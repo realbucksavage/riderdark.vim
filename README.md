@@ -1,6 +1,20 @@
 # JetBrains Rider Dark theme for Vim
 A port of [JetBrains Rider UI Theme Pack](https://plugins.jetbrains.com/plugin/13883-rider-ui-theme-pack)'s Rider Dark Theme for Vim!
 
+> ***This is still very much in Beta, and will be enhanced with time.***
+
+## Installation
+
+Just import `realbucksavage/riderdark.vim` with your plugin manager and you're good to go.
+
+### Lightline
+
+```vim
+let g:lightline = {
+      \ 'colorscheme': 'riderdark',
+      \ }
+```
+
 ## Contributing
 
 Don't raise PRs containing direct changes to `colors`. Edit appropriate files in `./src`, run `./build.sh`, and then commit all changes.
