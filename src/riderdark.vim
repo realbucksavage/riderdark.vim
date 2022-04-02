@@ -42,6 +42,11 @@ let s:constant="{{ (.Attr "DEFAULT_CONSTANT").InnerValue.FG }}"
 let s:todo="{{ (.Attr "TODO_DEFAULT_ATTRIBUTES").InnerValue.FG }}"
 let s:valid_string_escape="{{ (.Attr "DEFAULT_VALID_STRING_ESCAPE").InnerValue.FG }}"
 let s:invalid_string_escape="{{ (.Attr "DEFAULT_INVALID_STRING_ESCAPE").InnerValue.FG }}"
+let s:selection="{{.Color "SELECTION_BACKGROUND"}}"
+let s:labels="{{ (.Attr "DEFAULT_LABEL").InnerValue.FG }}"
+let s:annotations="{{.Color "ANNOTATIONS_COLOR"}}"
+let s:error_hint="{{.Color "ERROR_HINT"}}"
+let s:parenths="{{ (.Attr "DEFAULT_PARENTHS").InnerValue.FG }}"
 
 " call s:hi("", "", "")
 {{template "Core" .}}
