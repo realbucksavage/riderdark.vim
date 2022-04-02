@@ -52,8 +52,8 @@ let s:parenths="#bdbdbd"
 
 call s:hi("Normal", s:fg, s:bg)
 call s:hi("Cursor", "", "#f0f0f0")
-call s:hi("CursorColumn", "#f0f0f0", s:bg)
-call s:hi("CursorLine", "#f0f0f0", s:bg)
+call s:hi("CursorColumn", "", "#202424")
+call s:hi("CursorLine", "", "#202424")
 
 call s:hi("LineNr", "#808080", "#282828")
 call s:hi("CursorLineNr", "#808080", "#282828")
@@ -63,8 +63,8 @@ call s:hi("DiffChange", s:fg, "#3a3070")
 call s:hi("DiffDelete", s:fg, "#424242")
 call s:hi("DiffText", s:fg, s:bg)
 
-call s:hi("IncSearch", s:fg, "#133f2f")
-call s:hi("Search", s:fg, "#484012")
+call s:hi("IncSearch", s:fg, "#522750")
+call s:hi("Search", s:fg, "#133f2f")
 
 call s:hi("Visual", "", s:selection)
 call s:hi("VisualNOS", "", s:selection)
@@ -73,6 +73,9 @@ call s:hi("Pmenu", s:bg, s:fg)
 call s:hi("PmenuSel", s:fg, s:keywords)
 call s:hi("PmenuSbar", "", s:selection)
 call s:hi("PmenuThumb", "", s:fg)
+
+call s:hi("VertSplit", "", "#202424")
+call s:hi("ColorColumn", "", "#202424")
 
 " Whitespace is defined in Neovim, not Vim.
 " See :help hl-Whitespace and :help hl-SpecialKey
